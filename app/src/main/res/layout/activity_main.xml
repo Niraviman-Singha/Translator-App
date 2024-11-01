@@ -4,17 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ai"
+    android:background="#B8F1BA"
     android:gravity="center|start"
     android:orientation="vertical"
-    android:padding="18dp"
+    android:padding="15dp"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/nir">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translator"
+        android:textAlignment="center"
+        android:textSize="50dp">
+
+    </TextView>
 
     <TextView
         android:id="@+id/englishLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="8dp"
         android:text="English:"
         android:textSize="18sp"
@@ -25,27 +43,28 @@
     <EditText
         android:id="@+id/inputEditText"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="120dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_edittext"
         android:gravity="start"
         android:hint="Enter text in English"
         android:padding="12dp"
+        android:textColor="@color/blue"
         android:textSize="20sp">
 
     </EditText>
 
     <Button
         android:id="@+id/translateButton"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/blue"
         android:padding="12dp"
         android:text="Translate to Bangla"
         android:textColor="@color/white"
-        android:textSize="16sp">
+        android:textSize="20sp">
 
     </Button>
 
@@ -53,7 +72,7 @@
         android:id="@+id/banglaLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="8dp"
         android:text="Bangla:"
         android:textSize="18sp"
@@ -64,11 +83,12 @@
     <TextView
         android:id="@+id/outputText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
+        android:background="@drawable/rounded_edittext"
         android:gravity="center"
         android:padding="12dp"
         android:textColor="@color/blue"
-        android:textSize="38sp"
+        android:textSize="20sp"
         android:textStyle="bold">
 
     </TextView>
